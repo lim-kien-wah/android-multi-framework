@@ -10,6 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidHello">
         <activity
+            android:name=".HybridCordovaActivity"
+            android:exported="false"
+            android:label="Cordova Activity"
+            android:launchMode="singleTop">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+
+        <activity
             android:name=".ChildActivity"
             android:exported="false" />
         <activity
@@ -20,7 +31,6 @@
             android:theme="@style/Theme.AndroidHello.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
