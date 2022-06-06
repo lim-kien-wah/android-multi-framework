@@ -91,7 +91,8 @@ class FullscreenActivity : AppCompatActivity() {
         binding.dummyButton.setOnTouchListener(delayHideTouchListener)
 
         binding.btnStartAnotherActivity.setOnClickListener {
-            val intent = Intent(this,  ChildActivity::class.java)
+            val intent = Intent(this,  HybridCordovaActivity::class.java)
+//            val intent = Intent(this,  ChildActivity::class.java)
             // start your next activity
             startActivity(intent)
         }
