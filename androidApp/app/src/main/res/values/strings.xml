@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">AndroidHello</string>
     <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="title_activity_main">Main Activity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="open_cordova_app">Open Cordova App</string>
+    <string name="open_native_activity">Open Native Activity</string>
 </resources>

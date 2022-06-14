@@ -9,31 +9,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidHello">
-        <activity
-            android:name=".HybridCordovaActivity"
-            android:exported="false"
-            android:label="Cordova Activity"
-            android:launchMode="singleTop">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-        </activity>
 
         <activity
-            android:name=".ChildActivity"
-            android:exported="false" />
-        <activity
-            android:name=".FullscreenActivity"
+            android:name=".MainActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:exported="true"
-            android:label="@string/title_activity_fullscreen"
-            android:theme="@style/Theme.AndroidHello.Fullscreen">
+            android:label="@string/title_activity_main"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".HybridCordovaActivity"
+            android:exported="false"
+            android:label="Cordova Activity"
+            android:launchMode="singleTop">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".ChildActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
